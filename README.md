@@ -10,3 +10,4 @@ In the basic state of this application, you are able to make a new list simply b
 
 ## Notes
 As of August 18, 2023, this website is currently under development for an expansion.
+I am also exploring hosting it on AWS or a similar service.
