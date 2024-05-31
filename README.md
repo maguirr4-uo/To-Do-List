@@ -27,3 +27,4 @@ Planned expansions:
 - List active lists in the home page
 - Add authentication and save information per user
 - Host on a service like Azure, AWS, Google Cloud, etc.
+- Allow the option to personalize look of the site.
