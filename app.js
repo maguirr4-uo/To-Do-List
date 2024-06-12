@@ -1,4 +1,6 @@
 
+import os
+
 // Requires
 const dotenv = require("dotenv");
 const express = require("express");
@@ -20,7 +22,7 @@ app.use(bodyParser.urlencoded({extended: true}));
 app.use(express.static("public"));
 
 // Initialize Mongoose
-mongoose.connect(process.env.DB_URI, {useNewURLParser: true});
+mongoose.connect(os.getenv("DB_URI"), {useNewURLParser: true});
 
 const itemsSchema = {
     name: String
