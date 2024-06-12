@@ -1,6 +1,4 @@
 
-import os
-
 // Requires
 const dotenv = require("dotenv");
 const express = require("express");
