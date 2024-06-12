@@ -10,8 +10,6 @@ You can access it here: https://to-do-list-node-c26d94940792.herokuapp.com/
 ## Usage
 In the basic state of this application, you are able to make a new list simply by typing a new title in the URL. You are then able to add and delete tasks as text to the list.
 
-As this is currently not hosted anywhere, and I retain the keys needed to connect to my database, I have attached pictures of the application below, for illustration purposes.
-
 After creating a new list, a new object in the MongoDB database is created, and an endpoint is created that looks like this:
 
 <img width="395" alt="image" src="https://github.com/maguirr4-uo/To-Do-List/assets/72330081/002be6af-8138-4b5f-ba96-f5a42485ba1e">
