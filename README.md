@@ -31,8 +31,7 @@ In a modification from the original project, I have made it so that the item is 
 
 ## Notes
 Planned expansions:
-- Add button to delete list.
-- List active lists in the home page
-- Add authentication and save information per user
-- Host on a service like Azure, AWS, Google Cloud, etc.
-- Allow the option to personalize look of the site.
+- Add button to delete list, return home, etc, to improve user frienliness.
+- List active lists in the home page.
+- Add authentication and save information per user.
+- Allow options to personalize the look of the application.
