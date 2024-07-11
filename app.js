@@ -105,29 +105,14 @@ app.post("/delete", function(req, res) {
     const checkedItemId = req.body.checkbox;
     const listName = req.body.listName;
 
-    if(listName === "Today") {
-        Item.findByIdAndRemove(checkedItemId).then(function(foundItem) {
-            if(foundItem) {
-                console.log("Succesfully removed item.")
-                res.redirect("/");
-            }
-            else {
-                console.log("Could not find and remove item.");
-            }
-        }).catch(function(err) {
-            console.log(err);
-        })
-    }
-    else {
-        List.findOneAndUpdate({name: listName}, {$pull: {items: {_id: checkedItemId}}})
-        .then(function() {
-            console.log("Succesfully removed item.")
-            res.redirect("/" + listName);
-        })
-        .catch(function(err) {
-            console.log(err);
-        })
-    }
+    List.findOneAndUpdate({name: listName}, {$pull: {items: {_id: checkedItemId}}})
+    .then(function() {
+        console.log("Succesfully removed item.")
+        res.redirect("/" + listName);
+    })
+    .catch(function(err) {
+        console.log(err);
+    })
 })
 
 // Select port
