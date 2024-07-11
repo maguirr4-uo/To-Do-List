@@ -24,6 +24,10 @@ After checking the checkbox beside the To-Do item, it will be striked through as
 
 In a modification from the original project, I have made it so that the item is then removed from the list. This also removes it from the MongoDB database.
 
+## Updates
+7/10/2024: Fixed bug that would prevent the deletion of list items if the list was titled "Today."
+6/14/2024: First app deployment.
+
 ## Notes
 Planned expansions:
 - Add button to delete list.
